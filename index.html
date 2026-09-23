@@ -91,6 +91,29 @@
 
   <script>
     function comenzar() {
+
+  if (tukiYaTeConoce === "si") {
+    document.querySelector("main").innerHTML = `
+      <div class="compass">🧭</div>
+
+      <h2>¡Volviste!</h2>
+
+      <p>
+        Sabía que regresarías.
+        Soy Tuki, ¿recuerdas?
+      </p>
+
+      <p>
+        Esta vez tengo algo nuevo que enseñarte.
+      </p>
+
+      <button onclick="continuar()">
+        Seguir descubriendo
+      </button>
+    `;
+    return;
+  }
+
   guardarMemoria();
 
   document.querySelector("main").innerHTML = `
