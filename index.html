@@ -201,21 +201,55 @@ function siguiente() {
 }
 
 function finalizar() {
+    <div class="compass">🧭</div>
+
+  <h2>¡Capulina! 😄</h2>
+
+  <p>
+    Sí… ¡Capulina!
+  </p>
+
+  <p>
+    Uno de los personajes que hizo reír a México
+    y que también forma parte de la historia de Chignahuapan.
+  </p>
+
+  <p>
+    Está muy cerquita de aquí.
+  </p>
+
+  <p>
+    ¿Vamos a conocerlo?
+  </p>
+
+  <button onclick="finAventura()">
+    Vamos con Capulina →
+  </button>
+`;
+}
+function finAventura() {
   document.querySelector("main").innerHTML = `
     <div class="compass">🧭</div>
 
-    <h2>Esta aventura apenas comienza.</h2>
+    <h2>¡Vamos! 🧭</h2>
 
     <p>
-      Soy Tuki, y quiero enseñarte
-      los secretos de mi pueblo.
+      Capulina está muy cerquita de aquí.
     </p>
 
     <p>
-      Nos vemos en el próximo lugar.
+      Sigue mi brújula y vamos a conocerlo.
     </p>
+
+    <p>
+      Cuando llegues, vuelve a buscarme.
+    </p>
+
+    <button onclick="location.reload()">
+      Seguir descubriendo →
+    </button>
   `;
-}
+      }
     
   </script>
 
