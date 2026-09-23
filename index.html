@@ -104,10 +104,66 @@
         </button>
       `;
     }
+function continuar() {
+  document.querySelector("main").innerHTML = `
+    <div class="compass">🧭</div>
 
-    function continuar() {
-      alert("Muy pronto comenzaremos nuestra aventura.");
-    }
+    <h2>Entonces ven conmigo...</h2>
+
+    <p>
+      Este es el Kiosco Mudéjar.
+      Uno de los lugares que hacen especial a Chignahuapan.
+    </p>
+
+    <p>
+      Pero aquí hay algo que quiero enseñarte...
+    </p>
+
+    <button onclick="siguiente()">
+      Descubrir
+    </button>
+  `;
+}
+
+function siguiente() {
+  document.querySelector("main").innerHTML = `
+    <div class="compass">🧭</div>
+
+    <h2>¿Ves aquella estatua?</h2>
+
+    <p>
+      Es Capulina, un personaje muy querido
+      de Chignahuapan que hizo reír a México.
+    </p>
+
+    <p>
+      Está muy cerca de aquí.
+      ¿Vamos?
+    </p>
+
+    <button onclick="finalizar()">
+      ¡Vamos!
+    </button>
+  `;
+}
+
+function finalizar() {
+  document.querySelector("main").innerHTML = `
+    <div class="compass">🧭</div>
+
+    <h2>Esta aventura apenas comienza.</h2>
+
+    <p>
+      Soy Tuki, y quiero enseñarte
+      los secretos de mi pueblo.
+    </p>
+
+    <p>
+      Nos vemos en el próximo lugar.
+    </p>
+  `;
+}
+    
   </script>
 
 </body>
