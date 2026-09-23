@@ -3,30 +3,112 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Xplora | Vive. Descubre. Conecta.</title>
+
+  <title>Xplora | Tuki</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #071b35;
+      color: white;
+      text-align: center;
+    }
+
+    main {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+      box-sizing: border-box;
+    }
+
+    .compass {
+      font-size: 60px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 38px;
+      margin: 0 0 10px;
+      letter-spacing: 3px;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin: 10px 0;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      max-width: 420px;
+    }
+
+    button {
+      margin-top: 25px;
+      padding: 16px 28px;
+      border: none;
+      border-radius: 30px;
+      background: #d9ad45;
+      color: #071b35;
+      font-size: 17px;
+      font-weight: bold;
+    }
+  </style>
 </head>
 
 <body>
 
   <main>
+
+    <div class="compass">🧭</div>
+
     <h1>XPLORA</h1>
+
     <p>Vive. Descubre. Conecta.</p>
 
-    <h2>Bienvenido a Chignahuapan</h2>
+    <h2>Hola, soy Tuki.</h2>
 
     <p>
-      Hay lugares que se visitan...
-      y lugares que se descubren.
+      Acabas de encontrarme en Chignahuapan.
+      ¿Quieres descubrir conmigo este lugar?
     </p>
 
-    <button onclick="conocerATuki()">Conocer a Tuki</button>
+    <button onclick="comenzar()">
+      Vamos a descubrir
+    </button>
 
-<script>
-function conocerATuki() {
-  alert("¡Hola! Soy Tuki 🦎");
-}
-</script>
   </main>
+
+  <script>
+    function comenzar() {
+      document.querySelector("main").innerHTML = `
+        <div class="compass">🧭</div>
+
+        <h2>¡Qué bueno que llegaste!</h2>
+
+        <p>
+          Chignahuapan tiene historias, personas
+          y lugares que quiero enseñarte.
+        </p>
+
+        <p>
+          Y tengo una pregunta para ti...
+        </p>
+
+        <button onclick="continuar()">
+          Cuéntame
+        </button>
+      `;
+    }
+
+    function continuar() {
+      alert("Muy pronto comenzaremos nuestra aventura.");
+    }
+  </script>
 
 </body>
 </html>
