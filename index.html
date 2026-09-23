@@ -246,12 +246,35 @@ function finAventura() {
       Cuando llegues, vuelve a buscarme.
     </p>
 
+    <button onclick="continuarAventura()">
+  Seguir descubriendo →
+</button>
+  `;
+      }
+    function continuarAventura() {
+  document.querySelector("main").innerHTML = `
+    <div class="compass">🧭</div>
+
+    <h2>Ahora sí… vamos. 🦎</h2>
+
+    <p>
+      Capulina está muy cerquita de aquí.
+    </p>
+
+    <p>
+      Sigue mi brújula y camina hacia él.
+    </p>
+
+    <p>
+      Cuando estés frente a Capulina,
+      vuelve a buscarme.
+    </p>
+
     <button onclick="location.reload()">
-      Seguir descubriendo →
+      Volver con Tuki
     </button>
   `;
       }
-    
   </script>
 
 </body>
