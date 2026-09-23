@@ -201,31 +201,32 @@ function siguiente() {
 }
 
 function finalizar() {
+  document.querySelector("main").innerHTML = `
     <div class="compass">🧭</div>
 
-  <h2>¡Capulina! 😄</h2>
+    <h2>¡Capulina! 😄</h2>
 
-  <p>
-    Sí… ¡Capulina!
-  </p>
+    <p>
+      Sí… ¡Capulina!
+    </p>
 
-  <p>
-    Uno de los personajes que hizo reír a México
-    y que también forma parte de la historia de Chignahuapan.
-  </p>
+    <p>
+      Uno de los personajes que hizo reír a México
+      y que también forma parte de la historia de Chignahuapan.
+    </p>
 
-  <p>
-    Está muy cerquita de aquí.
-  </p>
+    <p>
+      Está muy cerquita de aquí.
+    </p>
 
-  <p>
-    ¿Vamos a conocerlo?
-  </p>
+    <p>
+      ¿Vamos a conocerlo?
+    </p>
 
-  <button onclick="finAventura()">
-    Vamos con Capulina →
-  </button>
-`;
+    <button onclick="finAventura()">
+      Vamos con Capulina →
+    </button>
+  `;
 }
 function finAventura() {
   document.querySelector("main").innerHTML = `
