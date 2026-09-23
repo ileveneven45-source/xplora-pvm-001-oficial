@@ -62,7 +62,13 @@
 
 <body>
 
-  <main>
+  <script>
+  const tukiYaTeConoce = localStorage.getItem("tuki_conocio");
+
+  function guardarMemoria() {
+    localStorage.setItem("tuki_conocio", "si");
+  }
+  </script><main>
 
     <div class="compass">🧭</div>
 
@@ -78,7 +84,7 @@
     </p>
 
     <button onclick="comenzar()">
-      Vamos a descubrir
+  Vamos a descubrir
     </button>
 
   </main>
